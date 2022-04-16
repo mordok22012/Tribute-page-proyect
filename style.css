@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-bg-color: #d7dfe0;
+  --header-bg-color: #9a9fa1;
+  --font-color: #333;
+  --footer-bg-color: #79717a;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--font-color);
+
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#img-div {
+  margin-bottom: 10px;
+}
+
+#img-caption {
+  margin: 5px 0 15px 0;
+  font-size: 2rem;
+}
+
+/*header */
+header {
+  background-color: var(--header-bg-color);
+}
+
+/*section */
+
+#tribute-info_time-line {
+  margin-bottom: 20px;
+}
+
+#tribute-info_time-line ul li {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 20px;
+}
+
+/*pie de pagina */
+footer {
+  padding: 12px;
+  margin-bottom: 0;
+  background-color: var(--footer-bg-color);
+}
+
+#tribute-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  color: #ddd;
+}
+
+/* styles for small screens */
+@media (max-width: 460px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
